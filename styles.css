@@ -1,34 +1,48 @@
 body{
-	background-color:#f8f8f8;
+    background-color:#f8f8f8;
+    font-family: Arial, sans-serif;
 }
 
 .book-library{
-	background-color:#ffffff;
+    background-color:#ffffff;
+    padding: 20px 40px;
 }
+
 h1{
-	text-align:center;
+    text-align:center;
 }
+
 .book{
-	border:1px solid black;
-	margin-bottom:10px;
+    border:1px solid black;
+    margin-bottom:10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ✅ centers image + text */
 }
-img{
-	display:block;
-	margin:0 auto;
-	margin-top:20px;
+
+/* Image centered and sized */
+.book img{
+    width:200px;
+    display:block;
+    margin:20px 0;
 }
+
 h3{
-	margin-left:10px;
+    margin:5px 0;
 }
+
 .author{
-	color:#777777;	
-	margin-left:10px;
+    color:#777777;	
+    margin:5px 0;
 }
+
 .price{
-	background-color:#2ecc71;
-	text-align:center;
-	color:white;
-	margin-left:20px;
-	margin-right:20px;
-	
+    background-color:#2ecc71;
+    text-align:center;
+    color:white;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 5px;
 }
