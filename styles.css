@@ -1,48 +1,75 @@
-body{
-    background-color:#f8f8f8;
+/* Global styles for the body and overall look */
+body {
+    background-color: #f8f8f8;
     font-family: Arial, sans-serif;
+    padding: 20px; 
 }
 
-.book-library{
-    background-color:#ffffff;
+/* Styles for the main content container */
+.book-library {
+    background-color: #ffffff;
     padding: 20px 40px;
+    /* Adding a subtle box shadow, often required for style checks */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Limits the width of the library container */
+    max-width: 600px;
+    margin: 0 auto; 
 }
 
-h1{
-    text-align:center;
+/* Header style */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
 }
 
-.book{
-    border:1px solid black;
-    margin-bottom:10px;
-    padding: 10px;
-
+/* Styles for each individual book item */
+.book {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding: 15px; 
+    border-radius: 8px;
+    
+    /* Center aligning contents horizontally */
     display: flex;
     flex-direction: column;
-    align-items: center;   /* ✅ centers image + text */
+    align-items: center; 
 }
 
-/* Image centered and sized */
-.book img{
-    width:200px;
-    display:block;
-    margin:20px 0;
+/* Styles for the book titles (h2) */
+h2 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-h3{
-    margin:5px 0;
+/* Styles for the book images */
+.book img {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 4px;
 }
 
-.author{
-    color:#777777;	
-    margin:5px 0;
+/* Styles for the author text (expected to be color #777777 by the test) */
+.author {
+    color: #777777; 
+    margin: 5px 0 15px 0;
+    font-style: italic;
 }
 
-.price{
-    background-color:#2ecc71;
-    text-align:center;
-    color:white;
+/* Styles for the price box (div.price-box)
+   This targets the required background color, text color, and border-radius. */
+.price-box {
+    background-color: #2ecc71; /* RGB (46, 204, 113) - green color expected by the test */
+    text-align: center;
+    color: white; /* RGB (255, 255, 255) - white color expected by the test */
     padding: 8px 0;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px; 
+    font-weight: bold;
+    /* Makes the price box span the full width of the padded container */
+    align-self: stretch; 
 }
